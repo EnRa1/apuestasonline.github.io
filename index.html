@@ -40,6 +40,7 @@ body{height:100%;margin:0;overflow:hidden;background:var(--chrome-bg);color:var(
 .slide{position:absolute;inset:0;opacity:0;visibility:hidden;transition:opacity .4s,visibility 0s .4s;overflow:hidden;color:#fff}
 .slide.active{opacity:1;visibility:visible;transition:opacity .4s}
 .stage.cut .slide{transition:none!important}
+.abs{position:absolute}
 .slide.abs{position:absolute}
 .gold{color:var(--gold)}
 
@@ -81,10 +82,10 @@ body{height:100%;margin:0;overflow:hidden;background:var(--chrome-bg);color:var(
 
 /* tipografía casino */
 .title-xl,.title-lg{font-family:Bungee,Impact,sans-serif;font-weight:400;background:linear-gradient(#fff7b8,#ffc933 48%,#ff8a00);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 7px 0 #6b2200) drop-shadow(0 0 34px #ffb02099);margin:0}
-.title-xl{font-size:116px;line-height:1.02}
-.title-lg{font-size:84px;line-height:1.05}
-.h2{font:400 62px/1.06 Bungee,Impact,sans-serif;margin:0;background:linear-gradient(#fff7b8,#ffc933 48%,#ff8a00);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 5px 0 #6b2200) drop-shadow(0 0 24px #ffb02088)}
-.hd{position:absolute;left:100px;top:64px;width:1480px}
+.title-xl{font-size:92px;line-height:1.08}
+.title-lg{font-size:72px;line-height:1.08}
+.h2{font:400 54px/1.06 Bungee,Impact,sans-serif;margin:0;background:linear-gradient(#fff7b8,#ffc933 48%,#ff8a00);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 5px 0 #6b2200) drop-shadow(0 0 24px #ffb02088)}
+.hd{position:absolute;left:80px;top:50px;width:1600px}
 .hd p{font:500 34px/1.3 'Rubik',sans-serif;color:#cfc4ff;margin:14px 0 0}
 .rays{position:absolute;width:1400px;height:1400px;border-radius:50%;background:repeating-conic-gradient(from 0deg,#ffd76626 0 8deg,#0000 8deg 20deg);-webkit-mask:radial-gradient(circle,#000 18%,#0000 68%);mask:radial-gradient(circle,#000 18%,#0000 68%);animation:spin 40s linear infinite}
 
@@ -125,18 +126,18 @@ body{height:100%;margin:0;overflow:hidden;background:var(--chrome-bg);color:var(
 .team{position:absolute;left:120px;right:120px;top:930px;font:500 28px/1.4 'Rubik',sans-serif;color:#cfc4ff;text-align:center}
 
 /* S2-S3 */
-.notif{position:absolute;left:1620px;top:220px;width:84px;height:84px;border-radius:50%;background:var(--red);border:5px solid #fff;font:800 50px/74px 'Rubik',sans-serif;text-align:center;z-index:4;animation:pulse 1s infinite}
-.item-card{position:absolute;left:1030px;top:210px;width:640px;height:700px;border-radius:36px;padding:40px;background:linear-gradient(170deg,#3b3f4d,#171a25);border:8px solid #9aa3b2;text-align:center;opacity:0;transform:translateY(60px) scale(.8)}
+.notif{position:absolute;left:1750px;top:180px;width:84px;height:84px;border-radius:50%;background:var(--red);border:5px solid #fff;font:800 50px/74px 'Rubik',sans-serif;text-align:center;z-index:4;animation:pulse 1s infinite}
+.item-card{position:absolute;left:1250px;top:160px;width:580px;height:700px;border-radius:36px;padding:40px;background:linear-gradient(170deg,#3b3f4d,#171a25);border:8px solid #9aa3b2;text-align:center;opacity:0;transform:translateY(60px) scale(.8)}
 .item-card.show{opacity:1;transform:none;transition:all .6s cubic-bezier(.3,1.5,.5,1)}
 .item-card .ic-art{height:360px;display:flex;align-items:center;justify-content:center;color:#9aa3b2}
 .item-card .ic-art svg{width:280px;height:280px}
 .ic-name{font:400 52px Bungee,sans-serif;margin-top:6px}
 .ic-tag{display:inline-block;margin-top:20px;padding:8px 30px;border-radius:30px;background:var(--c);color:#111;font:800 34px 'Rubik',sans-serif}
 .teaser{margin-top:26px;font:600 34px 'Rubik',sans-serif;color:#ffd77a}
-.rw-a,.rw-b{position:absolute;left:110px;top:200px;width:920px;height:760px;transition:opacity .5s}
-.rw-a .btn,.rw-b .btn{position:absolute;left:0;top:590px}
+.rw-a,.rw-b{position:absolute;left:80px;top:160px;width:1100px;height:800px;transition:opacity .5s}
+.rw-a .btn,.rw-b .btn{position:absolute;left:0;top:560px}
 .rw-b{opacity:0;pointer-events:none}
-.rw-b .title-xl{font-size:100px}
+.rw-b .title-xl{font-size:88px}
 .revealed .rw-a{opacity:0;pointer-events:none}
 .revealed .rw-b{opacity:1;pointer-events:auto}
 #chestR{transition:opacity .5s}
@@ -197,10 +198,10 @@ body{height:100%;margin:0;overflow:hidden;background:var(--chrome-bg);color:var(
 .tile{border-radius:24px;padding:26px 30px;background:linear-gradient(160deg,#2a1466,#160a3a);border:3px solid #7b5cff88;opacity:0;min-height:196px}
 .slide.active .tile{animation:pop .5s cubic-bezier(.3,1.5,.5,1) forwards;animation-delay:calc(var(--i)*.28s + .4s)}
 .tile h3,.gc h3{font:400 38px Bungee,sans-serif;color:var(--gold);margin:0 0 10px}
-.tile p,.gc p{font:400 30px/1.3 'Rubik',sans-serif;margin:0;color:#e6ddff}
+.tile p,.gc p{font:400 26px/1.3 'Rubik',sans-serif;margin:0;color:#e6ddff}
 .grid4{position:absolute;left:100px;right:100px;top:290px;display:grid;grid-template-columns:repeat(4,1fr);gap:26px}
-.gc{position:relative;border-radius:24px;padding:26px 28px;background:linear-gradient(160deg,#2a1466,#160a3a);border:3px solid #7b5cff88;min-height:270px;overflow:hidden}
-.gc h3{font-size:32px}
+.gc{position:relative;border-radius:22px;padding:18px 22px;background:linear-gradient(160deg,#2a1466,#160a3a);border:3px solid #7b5cff88;min-height:185px;overflow:hidden}
+.gc h3{font-size:28px}
 .gc.hot{border-color:var(--red);background:linear-gradient(160deg,#5a0f3a,#2a0620);box-shadow:0 0 40px #ff2d5577}
 .gc.hot::after{content:"?";position:absolute;right:16px;bottom:-40px;font:400 220px Bungee,sans-serif;color:#ff2d5533}
 .banner{grid-column:span 1;border-radius:24px;padding:26px 28px;border:3px dashed var(--gold);color:var(--gold);font:600 32px/1.3 'Rubik',sans-serif;display:flex;align-items:center}
@@ -247,13 +248,13 @@ body{height:100%;margin:0;overflow:hidden;background:var(--chrome-bg);color:var(
 .lg span{font:400 26px/1.25 'Rubik',sans-serif;color:#cfc4ff}
 
 /* evidencia */
-.g3{position:absolute;left:100px;right:100px;top:205px;display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
-.ev{border-radius:24px;padding:26px 28px;background:linear-gradient(160deg,#241058,#130a34);border:3px solid #7b5cff66;min-height:340px;display:flex;flex-direction:column}
-.ev h3{font:400 28px/1.15 Bungee,sans-serif;color:var(--gold);margin:0 0 12px}
-.ev p{font:400 27px/1.3 'Rubik',sans-serif;margin:0 0 auto;color:#efe9ff}
-.ev small{display:block;margin-top:12px;font:500 23px/1.25 'Rubik',sans-serif;color:var(--cyan)}
-.ev .lv{align-self:flex-start;margin-top:10px;padding:3px 14px;border-radius:20px;background:#ffffff18;font:600 21px 'Rubik',sans-serif;color:#d9ceff}
-.foot{position:absolute;left:100px;right:100px;top:925px;font:500 28px/1.35 'Rubik',sans-serif;color:#cfc4ff;border-left:6px solid var(--gold);padding-left:24px}
+.g3{position:absolute;left:80px;right:80px;top:190px;display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.ev{border-radius:20px;padding:18px 20px;background:linear-gradient(160deg,#241058,#130a34);border:3px solid #7b5cff66;min-height:290px;display:flex;flex-direction:column}
+.ev h3{font:400 24px/1.15 Bungee,sans-serif;color:var(--gold);margin:0 0 8px}
+.ev p{font:400 23px/1.3 'Rubik',sans-serif;margin:0 0 auto;color:#efe9ff}
+.ev small{display:block;margin-top:8px;font:500 20px/1.25 'Rubik',sans-serif;color:var(--cyan)}
+.ev .lv{align-self:flex-start;margin-top:8px;padding:2px 12px;border-radius:16px;background:#ffffff18;font:600 18px 'Rubik',sans-serif;color:#d9ceff}
+.foot{position:absolute;left:80px;right:80px;top:900px;font:500 24px/1.35 'Rubik',sans-serif;color:#cfc4ff;border-left:6px solid var(--gold);padding-left:20px}
 
 /* recorridos */
 .fl{position:absolute;left:90px;font:400 36px Bungee,sans-serif}
@@ -279,25 +280,25 @@ body{height:100%;margin:0;overflow:hidden;background:var(--chrome-bg);color:var(
 .srcline{position:absolute;left:100px;right:100px;top:930px;font:400 25px/1.4 'Rubik',sans-serif;color:#b9adf0}
 
 /* bolsillo */
-.g6{position:absolute;left:100px;top:270px;width:1140px;display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
-.bars{position:absolute;left:1320px;top:270px;width:500px}
-.bars h4{margin:0 0 20px;font:600 30px/1.3 'Rubik',sans-serif;color:#e6ddff}
-.brow{margin-bottom:30px}
-.brow .bl{font:500 28px 'Rubik',sans-serif;margin-bottom:8px}
+.g6{position:absolute;left:80px;top:220px;width:1180px;display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.bars{position:absolute;left:1300px;top:220px;width:520px}
+.bars h4{margin:0 0 16px;font:600 28px/1.3 'Rubik',sans-serif;color:#e6ddff}
+.brow{margin-bottom:22px}
+.brow .bl{font:500 26px 'Rubik',sans-serif;margin-bottom:6px}
 .brow .bt{height:38px;border-radius:19px;background:#ffffff18;overflow:hidden}
 .brow .bt i{display:block;height:100%;width:0;border-radius:19px;background:linear-gradient(90deg,#ff9f1c,#ffc933)}
 .slide.active .brow .bt i{animation:grow 1.4s .5s cubic-bezier(.2,.8,.2,1) forwards}
 @keyframes grow{to{width:var(--w)}}
-.brow .bv{font:400 46px Bungee,sans-serif;color:var(--gold);margin-top:6px}
+.brow .bv{font:400 40px Bungee,sans-serif;color:var(--gold);margin-top:4px}
 
 /* problema */
-.ring{position:absolute;left:1120px;top:270px;width:600px;height:600px;border-radius:50%;border:10px dashed #ff2d5599;animation:spin 26s linear infinite}
+.ring{position:absolute;left:1080px;top:240px;width:580px;height:580px;border-radius:50%;border:10px dashed #ff2d5599;animation:spin 26s linear infinite}
 .rn{position:absolute;padding:14px 30px;border-radius:40px;background:#3a0716;border:4px solid #ff6f8a;font:400 32px Bungee,sans-serif;white-space:nowrap;z-index:2}
-.rc-t{position:absolute;left:1120px;top:520px;width:600px;text-align:center;font:600 34px/1.3 'Rubik',sans-serif;color:#ffc4d0}
-.plist{position:absolute;left:100px;top:290px;width:900px;list-style:none;margin:0;padding:0}
-.plist li{font:500 40px/1.3 'Rubik',sans-serif;margin-bottom:26px;padding-left:44px;position:relative}
+.rc-t{position:absolute;left:1080px;width:580px;text-align:center;font:600 30px/1.3 'Rubik',sans-serif;color:#ffc4d0}
+.plist{position:absolute;left:80px;top:250px;width:920px;list-style:none;margin:0;padding:0}
+.plist li{font:500 36px/1.3 'Rubik',sans-serif;margin-bottom:22px;padding-left:44px;position:relative}
 .plist li::before{content:"";position:absolute;left:0;top:18px;width:20px;height:20px;border-radius:50%;background:#ff6f8a;box-shadow:0 0 16px #ff6f8a}
-.warn{position:absolute;left:100px;right:100px;top:900px;padding:22px 34px;border-radius:20px;background:#ffffff12;border:3px solid #ffffff33;font:500 34px/1.35 'Rubik',sans-serif;text-align:center}
+.warn{position:absolute;left:80px;right:80px;top:880px;padding:18px 28px;border-radius:18px;background:#ffffff12;border:3px solid #ffffff33;font:500 30px/1.35 'Rubik',sans-serif;text-align:center}
 
 /* CUIDAR (mismo estilo casino) */
 .grid10{position:absolute;left:100px;right:100px;top:215px;display:grid;grid-template-columns:repeat(5,1fr);gap:20px}
@@ -387,7 +388,7 @@ body{height:100%;margin:0;overflow:hidden;background:var(--chrome-bg);color:var(
     <div class="teaser">Próximo premio: ✦ ??? ✦ LEGENDARIO</div>
     <button class="btn gold" data-next>SEGUIR</button>
   </div>
-  <div class="abs bob" id="chestR" style="left:1030px;top:250px;width:700px" data-chest></div>
+  <div class="abs bob" id="chestR" style="left:1250px;top:200px;width:580px" data-chest></div>
   <div class="item-card" id="itemCard">
     <div class="ic-art" data-icon="shirt"></div>
     <div class="ic-name">REMERA BÁSICA</div>
@@ -561,11 +562,11 @@ body{height:100%;margin:0;overflow:hidden;background:var(--chrome-bg);color:var(
     <li>Seguir a pesar de las consecuencias negativas</li>
   </ul>
   <div class="ring"></div>
-  <div class="rn" style="left:1330px;top:236px">Apostar</div>
-  <div class="rn" style="left:1622px;top:548px">Perder</div>
-  <div class="rn" style="left:1230px;top:840px">Intentar recuperar</div>
-  <div class="rn" style="left:960px;top:548px">Apostar más</div>
-  <div class="rc-t" style="top:500px">un circuito que se retroalimenta</div>
+  <div class="rn" style="left:1280px;top:220px">Apostar</div>
+  <div class="rn" style="left:1480px;top:500px">Perder</div>
+  <div class="rn" style="left:1200px;top:760px">Intentar recuperar</div>
+  <div class="rn" style="left:980px;top:500px">Apostar más</div>
+  <div class="rc-t" style="top:460px">un circuito que se retroalimenta</div>
   <div class="warn">Realizar una apuesta no permite diagnosticar ludopatía. Se mira la <b>persistencia</b>, la <b>intensidad</b> y las <b>consecuencias</b>.</div>
 </section>
 
@@ -608,9 +609,9 @@ body{height:100%;margin:0;overflow:hidden;background:var(--chrome-bg);color:var(
 
 <section class="slide t-casino bulbs" id="s18" data-sec="CUIDAR" data-note="<b>28–30 min · Cierre.</b> Vuelve la pantalla inicial. La recompensa no se abre. Esperá unos segundos: aparece «Ahora sabemos por qué queremos abrirla». Nahuel cierra.">
   <div class="rays" style="left:800px;top:-160px"></div>
-  <div class="abs" style="left:110px;top:200px;width:920px"><h2 class="title-xl">TENÉS UNA RECOMPENSA GRATUITA</h2></div>
-  <div class="abs bob" style="left:1030px;top:250px;width:700px" data-chest></div>
-  <div class="abs" style="left:110px;top:780px"><button class="btn green pulse" id="noOpen">ABRIR</button></div>
+  <div class="abs" style="left:80px;top:160px;width:1100px"><h2 class="title-xl">TENÉS UNA RECOMPENSA GRATUITA</h2></div>
+  <div class="abs bob" style="left:1250px;top:200px;width:580px" data-chest></div>
+  <div class="abs" style="left:90px;top:720px"><button class="btn green pulse" id="noOpen">ABRIR</button></div>
   <div class="closer" id="closer">
     <div class="cl a" id="cla">Ahora sabemos por qué queremos abrirla.</div>
     <div class="cl b" id="clb">¿En qué momento jugar deja de ser solamente jugar?</div>
